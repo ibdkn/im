@@ -1,0 +1,126 @@
+@import "../../../../assets/styles/variables";
+
+.footer {
+  padding-top: 39px;
+  padding-bottom: 50px;
+  background: #648F64;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .footer-block {
+      margin-top: 11px;
+
+      .footer-head {
+        font-weight: 500;
+        font-size: 16px;
+        color: $secondary-color;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+      }
+
+      .footer-items {
+
+        ul {
+          list-style: none;
+          padding-left: 0;
+
+          li {
+            margin-bottom: 11px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            a {
+              font-size: 16px;
+              color: $secondary-color;
+              text-decoration: none;
+              cursor: pointer;
+              transition: .2s ease-in-out;
+
+              &:hover {
+                opacity: .7;
+                transition: .2s ease-in-out;
+              }
+            }
+
+          }
+        }
+      }
+
+      &.footer-info {
+        .footer-head {
+          margin-bottom: 15px;
+        }
+
+        .footer-social {
+          display: flex;
+          align-items: center;
+          margin-bottom: 55px;
+
+          a {
+            margin-right: 12px;
+            cursor: pointer;
+
+            &:hover {
+              opacity: .7;
+              transition: .2s ease-in-out;
+            }
+          }
+
+        }
+
+        .footer-payment {
+          max-width: 230px;
+          display: grid;
+          grid-template-columns: repeat(3, 70px);
+          gap: 10px;
+
+          .payment-item {
+            height: 35px;
+            background-position: top;
+          }
+
+        }
+
+      }
+
+      &.footer-contacts {
+        max-width: 253px;
+
+        .footer-contact {
+          font-size: 16px;
+          margin-bottom: 15px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .footer-contact-head {
+            font-weight: 500;
+            color: $secondary-color;
+            margin-bottom: 6px;
+          }
+
+          .footer-contact-info {
+            color: $secondary-color;
+          }
+
+        }
+
+      }
+
+
+    }
+
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    display: none;
+  }
+}
