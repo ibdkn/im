@@ -1,0 +1,46 @@
+@import "../../../../assets/styles/auth-form";
+
+.signup {
+
+  .container {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-self: flex-end;
+
+    .page-image {
+      position: absolute;
+      bottom: 0;
+      right: 150px;
+      z-index: -1;
+
+      img {
+        vertical-align: bottom;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .signup {
+    height: calc(100vh - 140px);
+    min-height: 500px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      .page-image {
+        right: auto;
+        left: 50%;
+        bottom: -60px;
+        transform: translateX(-55%);
+        opacity: .2;
+      }
+    }
+  }
+}
